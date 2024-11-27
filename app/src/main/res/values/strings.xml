@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ABu_hw2</string>
+    <string name="second_name">Second Name</string>
+    <string name="first_name">First Name</string>
+    <string name="calculate">Calculate</string>
+    <string name="you">You</string>
+    <string name="try_again">Try again</string>
+    <string name="your_score">Your Score</string>
+    <string name="love_calculator">Love Calculator</string>
+</resources>
