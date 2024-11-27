@@ -1,10 +1,11 @@
-package com.example.abu_hw2
+package com.example.abu_hw2.ui.fragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.abu_hw2.R
 import com.example.abu_hw2.databinding.FragmentResultBinding
 
 class ResultFragment : Fragment() {
@@ -30,10 +31,10 @@ class ResultFragment : Fragment() {
         binding.tvPercentage.text = "$percentage%"
 
         binding.btnTryAgain.setOnClickListener {
-            val loveFragment = LoveFragment()
+            val loveCalculatorFragment = LoveFragment()
 
             parentFragmentManager.beginTransaction()
-                .replace(R.id.fragment_container, loveFragment)
+                .replace(R.id.fragment_container, loveCalculatorFragment)
                 .addToBackStack(null)
                 .commit()
         }

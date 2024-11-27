@@ -1,6 +1,5 @@
-package com.example.abu_hw2
+package com.example.abu_hw2.data
 
-import android.telecom.Call
 import retrofit2.http.GET
 import retrofit2.http.Header
 import retrofit2.http.Query
