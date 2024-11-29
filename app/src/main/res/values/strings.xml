@@ -7,4 +7,8 @@
     <string name="try_again">Try again</string>
     <string name="your_score">Your Score</string>
     <string name="love_calculator">Love Calculator</string>
+    <string name="get_started">Get started</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="good_luck">Good luck!</string>
+    <string name="history">History</string>
 </resources>

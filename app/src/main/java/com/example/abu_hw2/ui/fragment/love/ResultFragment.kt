@@ -1,4 +1,4 @@
-package com.example.abu_hw2.ui.fragment
+package com.example.abu_hw2.ui.fragment.love
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
