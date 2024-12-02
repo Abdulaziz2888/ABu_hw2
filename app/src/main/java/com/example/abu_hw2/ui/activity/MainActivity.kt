@@ -7,7 +7,6 @@ import com.example.abu_hw2.R
 import com.example.abu_hw2.SharedPreferencesHelper
 import com.example.abu_hw2.data.LoveApiService
 import com.example.abu_hw2.databinding.ActivityMainBinding
-import com.example.abu_hw2.ui.fragment.love.LoveFragment
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 

@@ -31,10 +31,10 @@ class ResultFragment : Fragment() {
         binding.tvPercentage.text = "$percentage%"
 
         binding.btnTryAgain.setOnClickListener {
-            val loveCalculatorFragment = LoveFragment()
+            val loveCalculatorFragment = ResultFragment()
 
             parentFragmentManager.beginTransaction()
-                .replace(R.id.fragment_container, loveCalculatorFragment)
+                .replace(R.id.nav_host_fragment, loveCalculatorFragment)
                 .addToBackStack(null)
                 .commit()
         }
