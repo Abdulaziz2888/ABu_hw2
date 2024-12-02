@@ -5,9 +5,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.NavHostFragment
 import com.example.abu_hw2.R
 import com.example.abu_hw2.SharedPreferencesHelper
+import com.example.abu_hw2.data.HistoryDao
 import com.example.abu_hw2.data.LoveApiService
 import com.example.abu_hw2.databinding.ActivityMainBinding
-import com.example.abu_hw2.ui.fragment.love.LoveFragment
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
@@ -20,6 +20,9 @@ class MainActivity : AppCompatActivity() {
     lateinit var loveApiService: LoveApiService
 
     private lateinit var binding: ActivityMainBinding
+
+    @Inject
+    lateinit var historyDao: HistoryDao
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
