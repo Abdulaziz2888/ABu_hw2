@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/onBoardFragment">
+
+
+    <fragment
+        android:id="@+id/loveCalculatorFragment"
+        android:name="com.example.abu_hw2.ui.fragment.love.LoveCalculatorFragment"
+        android:label="LoveCalculatorFragment" >
+        <action
+            android:id="@+id/action_loveCalculatorFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/onBoardFragment"
+        android:name="com.example.abu_hw2.ui.fragment.onboard.OnBoardFragment"
+        android:label="OnBoardFragment" >
+        <action
+            android:id="@+id/action_onBoardFragment_to_loveCalculatorFragment"
+            app:destination="@id/loveCalculatorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.example.abu_hw2.ui.fragment.love.ResultFragment"
+        android:label="ResultFragment" >
+        <action
+            android:id="@+id/action_resultFragment_to_loveCalculatorFragment"
+            app:destination="@id/loveCalculatorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/onBoardViewPagerFragment"
+        android:name="com.example.abu_hw2.ui.fragment.onboard.OnBoardViewPagerFragment"
+        android:label="OnBoardViewPagerFragment" />
+</navigation>

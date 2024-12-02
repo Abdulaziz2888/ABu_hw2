@@ -1,4 +1,4 @@
-package com.example.abu_hw2
+package com.example.abu_hw2.data
 
 import com.google.gson.annotations.SerializedName
 
