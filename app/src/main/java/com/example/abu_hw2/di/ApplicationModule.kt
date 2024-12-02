@@ -2,10 +2,7 @@ package com.example.abu_hw2.di
 
 import android.content.Context
 import android.content.SharedPreferences
-import androidx.room.Room
 import com.example.abu_hw2.SharedPreferencesHelper
-import com.example.abu_hw2.data.HistoryDao
-import com.example.abu_hw2.data.HistoryDatabase
 import com.example.abu_hw2.data.LoveApiService
 import com.example.abu_hw2.mvvm.repository.LoveRepository
 import com.example.abu_hw2.mvvm.viewmodel.LoveViewModel
@@ -36,22 +33,6 @@ class ApplicationModule {
             .addConverterFactory(GsonConverterFactory.create())
             .build()
             .create(LoveApiService::class.java)
-    }
-
-
-    @Provides
-    @Singleton
-    fun provideDatabase(@ApplicationContext context: Context): HistoryDatabase {
-        return Room.databaseBuilder(
-            context,
-            HistoryDatabase::class.java,
-            "history_database"
-        ).build()
-    }
-
-    @Provides
-    fun provideHistoryDao(database: HistoryDatabase): HistoryDao {
-        return database.historyDao()
     }
 
     @Provides
